@@ -1,0 +1,222 @@
+<!-- 
+  THE HERBARIUM — Notes on Herbal & Medicinal Plants (Specimen Sheet Style)
+  Paste this entire block into an Elementor "HTML" widget (or a Custom HTML section).
+  Layout: a grid of "pressed specimen sheet" cards with dotted borders and hand-labeled 
+  tags — a new topic (herbal history/traditional use, kept general and non-medical) 
+  and a new visual structure versus the previous three plant pages.
+  Content is historical/informational only — general traditional uses, not dosing 
+  or treatment instructions. Suggest adding your own medical-disclaimer text if needed.
+  Photos below use Lorem Picsum (free-to-use placeholders) — swap the <img src="..."> 
+  links with your own photography before publishing.
+-->
+<style>
+  .hrb-wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #2c2a1e;
+    background: #f6f3e9;
+    line-height: 1.75;
+  }
+  .hrb-hero {
+    text-align: center;
+    padding: 64px 0 30px;
+  }
+  .hrb-eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #5c6e3f;
+    margin-bottom: 16px;
+  }
+  .hrb-hero h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 0 16px;
+  }
+  .hrb-hero p {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #6b6650;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .hrb-disclaimer {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #8a8470;
+    max-width: 560px;
+    margin: 18px auto 0;
+    font-style: italic;
+  }
+
+  /* Specimen sheet grid */
+  .hrb-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 50px 0 60px;
+  }
+  .hrb-sheet {
+    background: #fffdf6;
+    border: 2px dashed #c9c19a;
+    border-radius: 4px;
+    padding: 24px;
+    position: relative;
+  }
+  .hrb-sheet-tag {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #5c6e3f;
+    color: #fffdf6;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+  .hrb-sheet img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin: 14px 0 16px;
+    filter: sepia(8%);
+  }
+  .hrb-sheet h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 4px;
+  }
+  .hrb-sheet .hrb-latin {
+    font-style: italic;
+    font-size: 13px;
+    color: #8a8470;
+    margin-bottom: 12px;
+  }
+  .hrb-sheet p {
+    font-size: 14.5px;
+    color: #3a3626;
+    margin-bottom: 10px;
+  }
+  .hrb-sheet .hrb-use {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #5c6e3f;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    margin-top: 12px;
+  }
+
+  /* Long-form section below the grid */
+  .hrb-longform {
+    border-top: 2px solid #ded4b0;
+    padding-top: 50px;
+  }
+  .hrb-longform h2 {
+    font-size: 27px;
+    font-weight: 400;
+    margin: 0 0 18px;
+    text-align: center;
+  }
+  .hrb-longform p {
+    font-size: 16.5px;
+    color: #332f22;
+    margin-bottom: 18px;
+  }
+  .hrb-longform img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 24px 0;
+  }
+
+  .hrb-footer-note {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #8a8470;
+    text-align: center;
+    padding: 40px 0 60px;
+    border-top: 1px solid #ded4b0;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 720px) {
+    .hrb-grid { grid-template-columns: 1fr; }
+    .hrb-hero h1 { font-size: 28px; }
+  }
+</style>
+
+<div class="hrb-wrap">
+
+  <!-- HERO -->
+  <div class="hrb-hero">
+    <div class="hrb-eyebrow">The Herbarium</div>
+    <h1>A Collection of Plants Long Used in Traditional Herbal Practice</h1>
+    <p>Historical and cultural notes on herbs that have been grown, dried, and steeped for centuries — where they come from, and how different traditions have used them.</p>
+    <p class="hrb-disclaimer">These notes are historical and educational, not medical advice — always consult a qualified professional before using any herb for a health purpose.</p>
+  </div>
+
+  <!-- SPECIMEN GRID -->
+  <div class="hrb-grid">
+
+    <div class="hrb-sheet">
+      <div class="hrb-sheet-tag">Specimen 01</div>
+      <h2>Chamomile</h2>
+      <div class="hrb-latin">Matricaria chamomilla</div>
+      <img src="https://picsum.photos/id/1080/500/350" alt="Chamomile flowers in a field">
+      <p>Small, daisy-like flowers that have been dried and steeped as a calming tea across European and Middle Eastern traditions for centuries, often reached for in the evening as part of a wind-down routine.</p>
+      <div class="hrb-use">Traditional Use — Evening tea, aromatic</div>
+    </div>
+
+    <div class="hrb-sheet">
+      <div class="hrb-sheet-tag">Specimen 02</div>
+      <h2>Peppermint</h2>
+      <div class="hrb-latin">Mentha × piperita</div>
+      <img src="https://picsum.photos/id/292/500/350" alt="Fresh mint leaves">
+      <p>A natural hybrid of two mint species, valued historically for its sharp, cooling aroma. Long used across many cultures as a digestive tea after meals, and widely grown simply for its culinary versatility.</p>
+      <div class="hrb-use">Traditional Use — After-meal tea, culinary</div>
+    </div>
+
+    <div class="hrb-sheet">
+      <div class="hrb-sheet-tag">Specimen 03</div>
+      <h2>Ginger</h2>
+      <div class="hrb-latin">Zingiber officinale</div>
+      <img src="https://picsum.photos/id/1080/500/351" alt="Fresh ginger root">
+      <p>A flowering plant grown for its underground stem, or rhizome, used in cooking and traditional practices across Asia for thousands of years — one of the oldest and most widely traded spices in human history.</p>
+      <div class="hrb-use">Traditional Use — Culinary, warming tea</div>
+    </div>
+
+    <div class="hrb-sheet">
+      <div class="hrb-sheet-tag">Specimen 04</div>
+      <h2>Lavender</h2>
+      <div class="hrb-latin">Lavandula angustifolia</div>
+      <img src="https://picsum.photos/id/106/500/350" alt="A field of purple lavender">
+      <p>Named from the Latin lavare, "to wash," reflecting its long use in bathing and laundry across Roman history. Its dried buds remain a common addition to sachets and calming blends today.</p>
+      <div class="hrb-use">Traditional Use — Aromatic, sachets</div>
+    </div>
+
+  </div>
+
+  <!-- LONG-FORM SECTION -->
+  <div class="hrb-longform">
+    <h2>Where Herbal Tradition and Modern Kitchens Overlap</h2>
+    <img src="https://picsum.photos/id/431/1100/600" alt="Dried herbs and jars on a wooden shelf">
+    <p>A surprising number of herbs now considered purely culinary — mint, ginger, thyme, sage — spent centuries doing double duty in traditional herbal practice long before they became kitchen staples. The line between "cooking herb" and "medicinal herb" is, historically, a fairly recent and somewhat artificial one; in most older traditions, a well-stocked kitchen and a well-stocked apothecary shelf overlapped substantially.</p>
+    <p>Much of this knowledge developed the way most practical knowledge did before modern chemistry: through generations of careful observation, passed down through households rather than written into formal texts. Some of it has since been studied more formally; a great deal of it remains primarily cultural and historical rather than clinically established.</p>
+    <p>That distinction matters. Enjoying chamomile tea for its taste and its long cultural association with rest is very different from treating any herb as a guaranteed remedy for a specific condition. The richest way to engage with this history is often the simplest — as a genuinely interesting record of what people reached for, and why, long before pharmacies existed.</p>
+  </div>
+
+  <div class="hrb-footer-note">
+    Historical and cultural notes on herbs, gathered from tradition rather than a lab.
+  </div>
+
+</div>
