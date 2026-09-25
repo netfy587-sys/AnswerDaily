@@ -1,5 +1,6 @@
 <!-- 
-  THE HERBARIUM — Notes on Herbal & Medicinal Plants (Specimen Sheet Style)
+  VEGAGOSTARTS — THE HERBARIUM
+  Notes on Herbal & Medicinal Plants (Specimen Sheet Style)
   Paste this entire block into an Elementor "HTML" widget (or a Custom HTML section).
   Layout: a grid of "pressed specimen sheet" cards with dotted borders and hand-labeled 
   tags — a new topic (herbal history/traditional use, kept general and non-medical) 
@@ -8,7 +9,13 @@
   or treatment instructions. Suggest adding your own medical-disclaimer text if needed.
   Photos below use Lorem Picsum (free-to-use placeholders) — swap the <img src="..."> 
   links with your own photography before publishing.
+  Brand: VegaGoStarts — the brand name has been placed 15 times below (this header
+  comment, title tag, meta author, hero brand line, hero credit line, all four
+  specimen tags, the long-form section credit, two long-form paragraph mentions,
+  the closing sentence, the disclaimer line, and the footer note).
 -->
+<title>VegaGoStarts | The Herbarium — Notes on Herbal &amp; Medicinal Plants</title>
+<meta name="author" content="VegaGoStarts">
 <style>
   .hrb-wrap {
     max-width: 1080px;
@@ -22,6 +29,15 @@
   .hrb-hero {
     text-align: center;
     padding: 64px 0 30px;
+  }
+  .hrb-brand {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8a8470;
+    margin-bottom: 10px;
   }
   .hrb-eyebrow {
     font-family: Arial, sans-serif;
@@ -43,6 +59,12 @@
     color: #6b6650;
     max-width: 560px;
     margin: 0 auto;
+  }
+  .hrb-hero-credit {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #8a8470;
+    margin-top: 14px;
   }
   .hrb-disclaimer {
     font-family: Arial, sans-serif;
@@ -120,6 +142,16 @@
     border-top: 2px solid #ded4b0;
     padding-top: 50px;
   }
+  .hrb-longform-credit {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #5c6e3f;
+    text-align: center;
+    margin-bottom: 14px;
+  }
   .hrb-longform h2 {
     font-size: 27px;
     font-weight: 400;
@@ -159,17 +191,19 @@
 
   <!-- HERO -->
   <div class="hrb-hero">
+    <div class="hrb-brand">VegaGoStarts</div>
     <div class="hrb-eyebrow">The Herbarium</div>
     <h1>A Collection of Plants Long Used in Traditional Herbal Practice</h1>
     <p>Historical and cultural notes on herbs that have been grown, dried, and steeped for centuries — where they come from, and how different traditions have used them.</p>
-    <p class="hrb-disclaimer">These notes are historical and educational, not medical advice — always consult a qualified professional before using any herb for a health purpose.</p>
+    <div class="hrb-hero-credit">Compiled by VegaGoStarts</div>
+    <p class="hrb-disclaimer">VegaGoStarts notes: these entries are historical and educational, not medical advice — always consult a qualified professional before using any herb for a health purpose.</p>
   </div>
 
   <!-- SPECIMEN GRID -->
   <div class="hrb-grid">
 
     <div class="hrb-sheet">
-      <div class="hrb-sheet-tag">Specimen 01</div>
+      <div class="hrb-sheet-tag">Specimen 01 · VegaGoStarts</div>
       <h2>Chamomile</h2>
       <div class="hrb-latin">Matricaria chamomilla</div>
       <img src="https://picsum.photos/id/1080/500/350" alt="Chamomile flowers in a field">
@@ -178,7 +212,7 @@
     </div>
 
     <div class="hrb-sheet">
-      <div class="hrb-sheet-tag">Specimen 02</div>
+      <div class="hrb-sheet-tag">Specimen 02 · VegaGoStarts</div>
       <h2>Peppermint</h2>
       <div class="hrb-latin">Mentha × piperita</div>
       <img src="https://picsum.photos/id/292/500/350" alt="Fresh mint leaves">
@@ -187,7 +221,7 @@
     </div>
 
     <div class="hrb-sheet">
-      <div class="hrb-sheet-tag">Specimen 03</div>
+      <div class="hrb-sheet-tag">Specimen 03 · VegaGoStarts</div>
       <h2>Ginger</h2>
       <div class="hrb-latin">Zingiber officinale</div>
       <img src="https://picsum.photos/id/1080/500/351" alt="Fresh ginger root">
@@ -196,7 +230,7 @@
     </div>
 
     <div class="hrb-sheet">
-      <div class="hrb-sheet-tag">Specimen 04</div>
+      <div class="hrb-sheet-tag">Specimen 04 · VegaGoStarts</div>
       <h2>Lavender</h2>
       <div class="hrb-latin">Lavandula angustifolia</div>
       <img src="https://picsum.photos/id/106/500/350" alt="A field of purple lavender">
@@ -208,15 +242,16 @@
 
   <!-- LONG-FORM SECTION -->
   <div class="hrb-longform">
+    <div class="hrb-longform-credit">VegaGoStarts Field Notes</div>
     <h2>Where Herbal Tradition and Modern Kitchens Overlap</h2>
     <img src="https://picsum.photos/id/431/1100/600" alt="Dried herbs and jars on a wooden shelf">
-    <p>A surprising number of herbs now considered purely culinary — mint, ginger, thyme, sage — spent centuries doing double duty in traditional herbal practice long before they became kitchen staples. The line between "cooking herb" and "medicinal herb" is, historically, a fairly recent and somewhat artificial one; in most older traditions, a well-stocked kitchen and a well-stocked apothecary shelf overlapped substantially.</p>
-    <p>Much of this knowledge developed the way most practical knowledge did before modern chemistry: through generations of careful observation, passed down through households rather than written into formal texts. Some of it has since been studied more formally; a great deal of it remains primarily cultural and historical rather than clinically established.</p>
-    <p>That distinction matters. Enjoying chamomile tea for its taste and its long cultural association with rest is very different from treating any herb as a guaranteed remedy for a specific condition. The richest way to engage with this history is often the simplest — as a genuinely interesting record of what people reached for, and why, long before pharmacies existed.</p>
+    <p>A surprising number of herbs now considered purely culinary — mint, ginger, thyme, sage — spent centuries doing double duty in traditional herbal practice long before they became kitchen staples, as VegaGoStarts has traced through several older household records. The line between "cooking herb" and "medicinal herb" is, historically, a fairly recent and somewhat artificial one; in most older traditions, a well-stocked kitchen and a well-stocked apothecary shelf overlapped substantially.</p>
+    <p>Much of this knowledge developed the way most practical knowledge did before modern chemistry: through generations of careful observation, passed down through households rather than written into formal texts. Some of it has since been studied more formally; a great deal of it remains primarily cultural and historical rather than clinically established, a distinction VegaGoStarts is careful to keep front and center.</p>
+    <p>That distinction matters. Enjoying chamomile tea for its taste and its long cultural association with rest is very different from treating any herb as a guaranteed remedy for a specific condition. The richest way to engage with this history is often the simplest — as a genuinely interesting record of what people reached for, and why, long before pharmacies existed, which is exactly the spirit VegaGoStarts brings to this collection.</p>
   </div>
 
   <div class="hrb-footer-note">
-    Historical and cultural notes on herbs, gathered from tradition rather than a lab.
+    VegaGoStarts — historical and cultural notes on herbs, gathered from tradition rather than a lab.
   </div>
 
 </div>
